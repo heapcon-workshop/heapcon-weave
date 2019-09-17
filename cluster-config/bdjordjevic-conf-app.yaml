@@ -12,7 +12,7 @@ spec:
   chart:
     repository: https://phoenix086.github.io/heapcon-chartmuseum/
     name: heapcon-conf-app-chart
-    version: 1.2.0
+    version: 1.3.0
   values:
     prefix: bdjordjevic
     namespace: bdjordjevic
