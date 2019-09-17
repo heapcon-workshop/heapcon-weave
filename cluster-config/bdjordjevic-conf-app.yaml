@@ -1,0 +1,27 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: bdjordjevic-heapcon-conf-app
+  namespace: bdjordjevic
+  annotations:
+    flux.weave.works/automated: "false"
+    flux.weave.works/tag.chart-image: semver:~2.0
+spec:
+  releaseName: bdjordjevic-heapcon-conf-app
+  chart:
+    repository: https://phoenix086.github.io/heapcon-chartmuseum/
+    name: heapcon-conf-app-chart
+    version: 1.2.0
+  values:
+    prefix: bdjordjevic
+    namespace: bdjordjevic
+#    image: gcr.io/xxxl-services/lutz-suggest:2.0.2
+#    env: play-lz
+#    rail: lz
+#    index:
+#      storage: 20Gi
+#      resources:
+#        requests:
+#          memory: 1Gi
+#    replicaCountQuery: 1
