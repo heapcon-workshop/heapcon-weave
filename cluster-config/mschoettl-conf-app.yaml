@@ -12,7 +12,7 @@ spec:
   chart:
     repository: https://phoenix086.github.io/heapcon-chartmuseum/
     name: heapcon-conf-app-chart
-    version: 1.0.0
+    version: 1.1.0
   values:
     prefix: mschoettl
     namespace: mschoettl
