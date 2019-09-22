@@ -1,0 +1,24 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: [prefix]-heapconapp
+  namespace: [prefix]
+  annotations:
+    flux.weave.works/automated: "false"
+    flux.weave.works/tag.chart-image: glob:*
+spec:
+  releaseName: [prefix]-heapconapp
+  chart:
+    repository: https://phoenix086.github.io/heapcon-chartmuseum/
+    name: heapcon-app
+    version: 1.1.0
+  values:
+    prefix: [prefix]
+    namespace: [prefix]
+    web:
+      image: bdjordjevic/default-heapcon-web:1.0.0
+    attendeeService:
+      image: bdjordjevic/default-heapcon-attendeeservice:1.0.0
+    scheduleService:
+      image: bdjordjevic/default-heapcon-scheduleservice:1.0.0
