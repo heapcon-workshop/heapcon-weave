@@ -12,7 +12,7 @@ spec:
   chart:
     repository: https://heapcon-workshop.github.io/heapcon-chartmuseum/
     name: heapcon-app
-    version: 1.1.0
+    version: 1.0.0
   values:
     prefix: [prefix]
     namespace: [prefix]
