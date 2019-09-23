@@ -10,7 +10,7 @@ metadata:
 spec:
   releaseName: bdjordjevic-heapcon-conf-app
   chart:
-    repository: https://phoenix086.github.io/heapcon-chartmuseum/
+    repository: https://heapcon-workshop.github.io/heapcon-chartmuseum/
     name: heapcon-app
     version: 1.1.0
   values:
