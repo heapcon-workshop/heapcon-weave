@@ -17,8 +17,8 @@ spec:
     prefix: bdjordjevic
     namespace: bdjordjevic
     web:
-      image: bdjordjevic/default-heapcon-web:1.0.0
+      image: bdjordjevic/heapcon-web:1.0.0
     attendeeService:
-      image: bdjordjevic/default-heapcon-attendeeservice:1.0.0
+      image: bdjordjevic/heapcon-attendeeservice:1.0.0
     scheduleService:
-      image: bdjordjevic/default-heapcon-scheduleservice:1.0.0
+      image: bdjordjevic/heapcon-scheduleservice:1.0.0
