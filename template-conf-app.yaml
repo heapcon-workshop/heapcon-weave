@@ -6,7 +6,7 @@ metadata:
   namespace: [prefix]
   annotations:
     flux.weave.works/automated: "false"
-    flux.weave.works/tag.chart-image: glob:*
+    flux.weave.works/tag.chart-image: semver:~1.0
 spec:
   releaseName: [prefix]-heapconapp
   chart:
