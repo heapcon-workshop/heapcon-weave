@@ -1,0 +1,24 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: bpanic-heapconapp
+  namespace: bpanic
+  annotations:
+    flux.weave.works/automated: "false"
+    flux.weave.works/tag.chart-image: semver:~1.0
+spec:
+  releaseName: bpanic-heapconapp
+  chart:
+    repository: https://heapcon-workshop.github.io/heapcon-chartmuseum/
+    name: heapcon-app
+    version: 1.1.0
+  values:
+    prefix: bpanic
+    namespace: bpanic
+    web:
+      image: bpanic/heapcon-web:1.0.0
+    attendeeService:
+      image: bpanic/heapcon-attendeeservice:1.0.0
+    scheduleService:
+      image: bpanic/heapcon-scheduleservice:1.0.0
