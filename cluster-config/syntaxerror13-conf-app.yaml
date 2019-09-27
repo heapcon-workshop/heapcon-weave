@@ -14,7 +14,7 @@ spec:
     name: heapcon-app
     version: 1.0.0
   values:
-    github_username: syntaxerror13
+    prefix: syntaxerror13
     namespace: syntaxerror13
     web:
       image: bdjordjevic/heapcon-web:1.0.0
