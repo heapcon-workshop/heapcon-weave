@@ -19,6 +19,6 @@ spec:
     web:
       image: bdjordjevic/heapcon-web:1.0.0
     attendeeService:
-      image: bdjordjevic/heapcon-attendeeservice:1.0.0
+      image: bratislav83/heapcon-attendeeservice:1.0.0
     scheduleService:
       image: bdjordjevic/heapcon-scheduleservice:1.0.0
