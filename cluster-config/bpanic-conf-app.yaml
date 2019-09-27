@@ -12,13 +12,13 @@ spec:
   chart:
     repository: https://heapcon-workshop.github.io/heapcon-chartmuseum/
     name: heapcon-app
-    version: 1.1.1
+    version: 1.2.0
   values:
     github_username: bpanic
     namespace: bpanic
     web:
       image: bpanic/heapcon-web:1.0.1
     attendeeService:
-      image: bpanic/heapcon-attendeeservice:1.0.0
+      image: bpanic/heapcon-attendeeservice:1.1.0
     scheduleService:
       image: bpanic/heapcon-scheduleservice:1.0.0
