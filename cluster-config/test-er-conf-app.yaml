@@ -14,7 +14,7 @@ spec:
     name: heapcon-app
     version: 1.0.0
   values:
-    prefix: test
+    prefix: ernez
     namespace: ernez
     web:
       image: bdjordjevic/heapcon-web:1.0.0
