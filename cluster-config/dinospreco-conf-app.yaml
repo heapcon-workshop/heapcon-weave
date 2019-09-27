@@ -14,7 +14,7 @@ spec:
     name: heapcon-app
     version: 1.0.0
   values:
-    github_username: dinospreco
+    prefix: dinospreco
     namespace: dinospreco
     web:
       image: bdjordjevic/heapcon-web:1.0.0
