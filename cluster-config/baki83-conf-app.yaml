@@ -2,20 +2,20 @@
 apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
-  name: dinospreco-heapconapp
-  namespace: dinospreco
+  name: baki83-heapconapp
+  namespace: baki83
   annotations:
     flux.weave.works/automated: "false"
     flux.weave.works/tag.chart-image: semver:~1.0
 spec:
-  releaseName: dinospreco-heapconapp
+  releaseName: baki83-heapconapp
   chart:
     repository: https://heapcon-workshop.github.io/heapcon-chartmuseum/
     name: heapcon-app
     version: 1.0.0
   values:
-    github_username: dinospreco
-    namespace: dinospreco
+    github_username: baki83
+    namespace: baki83
     web:
       image: bdjordjevic/heapcon-web:1.0.0
     attendeeService:
