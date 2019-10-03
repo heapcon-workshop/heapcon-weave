@@ -10,8 +10,8 @@ metadata:
 spec:
   releaseName: test-heapconapp
   chart:
-    repository: https://heapcon-workshop.github.io/heapcon-chartmuseum/
-    name: heapcon-app
+    repository: https://msgnc-travel.github.io/msgnc-helm-chart/
+    name: msgnc-travel-app
     version: 1.0.0
   values:
     prefix: test
